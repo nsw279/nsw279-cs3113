@@ -112,10 +112,10 @@ int main(int argc, char *argv[]) {
     
     std::string titleMessage = "Press Space to Start; Left and Right Arrows to Move and Space to Shoot";
     
-    GLuint mainFont = LoadTexture("/Users/noahweitz/Documents/Documents - Noah Weitz's MacBook Pro/School/Game Programming/Personal Repo/nsw279-cs3113/Space Invaders/font1.png");
+    GLuint mainFont = LoadTexture(RESOURCE_FOLDER"font1.png");
     
-    GLuint greenShip = LoadTexture("/Users/noahweitz/Documents/Documents - Noah Weitz's MacBook Pro/School/Game Programming/Personal Repo/nsw279-cs3113/Space Invaders/Space shooter assets (300 assets)/PNG/playerShip1_green.png");
-    GLuint enemyShip = LoadTexture("/Users/noahweitz/Documents/Documents - Noah Weitz's MacBook Pro/School/Game Programming/Personal Repo/nsw279-cs3113/Space Invaders/Space shooter assets (300 assets)/PNG/Enemies/enemyRed1.png");
+    GLuint greenShip = LoadTexture(RESOURCE_FOLDER"PNG/playerShip1_green.png");
+    GLuint enemyShip = LoadTexture(RESOURCE_FOLDER"PNG/Enemies/enemyRed1.png");
     
     GameState state;
     Entity ship(true, greenShip);
