@@ -63,9 +63,9 @@ int main(int argc, char *argv[])
     textureProg.Load(RESOURCE_FOLDER"vertex_textured.glsl", RESOURCE_FOLDER"fragment_textured.glsl");
     
     // I wasn't entirely sure how to get the correct filepath outside of my own machine, these paths may need to be changed
-    GLuint medal1 = LoadTexture("/nsw279-cs3113/HW2/NYUCodebase/medals/flat_medal1.png");
-    GLuint smile = LoadTexture("/nsw279-cs3113/HW2/NYUCodebase/smilies/smile.gif");
-    GLuint cool = LoadTexture("/nsw279-cs3113/HW2/NYUCodebase/smilies/cool.gif");
+//    GLuint medal1 = LoadTexture("/nsw279-cs3113/HW2/NYUCodebase/medals/flat_medal1.png");
+//    GLuint smile = LoadTexture("/nsw279-cs3113/HW2/NYUCodebase/smilies/smile.gif");
+//    GLuint cool = LoadTexture("/nsw279-cs3113/HW2/NYUCodebase/smilies/cool.gif");
     
     glm::mat4 projectionMatrix = glm::mat4(1.0f);
     glm::mat4 modelMatrix = glm::mat4(1.0f);
@@ -136,7 +136,7 @@ int main(int argc, char *argv[])
         textureProg.SetProjectionMatrix(projectionMatrix);
         textureProg.SetModelMatrix(modelMatrix);
         
-        glBindTexture(GL_TEXTURE_2D, medal1);
+       // glBindTexture(GL_TEXTURE_2D, medal1);
         
         float vertices3[] = {-0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5};
         
@@ -154,7 +154,7 @@ int main(int argc, char *argv[])
         textureProg.SetProjectionMatrix(projectionMatrix);
         textureProg.SetModelMatrix(modelMatrix2);
         
-        glBindTexture(GL_TEXTURE_2D, smile);
+      //  glBindTexture(GL_TEXTURE_2D, smile);
         
         float vertices4[] = {-0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5};
         
@@ -172,7 +172,7 @@ int main(int argc, char *argv[])
         textureProg.SetProjectionMatrix(projectionMatrix);
         textureProg.SetModelMatrix(modelMatrix3);
         
-        glBindTexture(GL_TEXTURE_2D, cool);
+       // glBindTexture(GL_TEXTURE_2D, cool);
         
         float vertices5[] = {-0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5};
         
